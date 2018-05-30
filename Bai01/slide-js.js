@@ -4,7 +4,7 @@ var dots = document.getElementsByClassName("dot");
 //slide start
 var slideIndex = 1; 
 //time run slide auto (second)
-var TIME_AUTO_SEC = 5;
+var TIME_AUTO_SEC = 6;
 
 //show slide
 showSlides(); 

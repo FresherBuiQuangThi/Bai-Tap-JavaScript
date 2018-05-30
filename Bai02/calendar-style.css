@@ -1,0 +1,48 @@
+*{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #1e1e1e  url(images/messi.jpg) no-repeat;
+	border-bottom-style: str
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+    color: #7f7f7f;
+}
+
+
+.calendar-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+	align : center;
+}
+
+.title_1 {
+	margin-top: 50px;
+	text-align: center;
+	color: red;
+}
+
+.box_date {
+	padding-top: 70px;
+	text-align: center;
+	width: 500px;
+	height: 0 auto;
+	position: relative;
+	margin: 0 auto;
+}
+
+#datepicker {
+	width : 400px;
+}
+
+
+
+
