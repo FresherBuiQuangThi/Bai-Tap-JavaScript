@@ -1,7 +1,4 @@
-*{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
-
-*
-{
+*{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -9,19 +6,11 @@
 
 body
 {
-    background: #1e1e1e  url(images/messi.jpg) no-repeat;
-	border-bottom-style: str
+	background-image:url(images/messi.jpg);
+	border-bottom-style: str;
     font-family: 'Open Sans', sans-serif;
     font-size: 11pt;
     color: #7f7f7f;
-}
-
-
-.calendar-container {
-    max-width: 100%;
-    position: relative;
-    margin: 0 auto;
-	align : center;
 }
 
 .title_1 {
@@ -29,7 +18,6 @@ body
 	text-align: center;
 	color: red;
 }
-
 .box_date {
 	padding-top: 70px;
 	text-align: center;
@@ -39,10 +27,48 @@ body
 	margin: 0 auto;
 }
 
-#datepicker {
-	width : 400px;
+select {
+    font-size: 14px;
 }
 
+.calendar-container button {
+    border: none;
+    background: none;
+}
 
+.calendar-container button:hover {
+    color: red;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+input#datepicker {
+    background: url(images/calendar.png) no-repeat right;
+    background-size: contain;
+	color: #34eded;
+	text-align: center;
+}
+
+table, tr, td { font-family: 'Times New Roman', sans-serif; border: 1.5px solid black;border-collapse: collapse;margin-top: 10px; align: center; background-color: #b3d8d8; }
+
+tr {
+	background-color: #a59e9d;
+}
+
+td {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+	color: black;
+}
+
+td.days:hover {
+    background: rgba(136, 243, 243, 0.83);
+    cursor: pointer;
+}
+td.week {
+    font-weight: bold;
+    color: red;
+}
 
 
