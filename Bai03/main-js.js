@@ -2,13 +2,11 @@
  * Submit form ajax, check input and call ajax
  */
 function submitFormAjax() {
-	//check input validate if validate return ajax
+	
 	if (checkUsername() && checkPass() && checkEmail() && checkBirthday()) {
 		console.log("submit");
 		var uservalue = document.getElementById("username").value;
-		//var pass = document.getElementById("password");
 
-		//var url = "info_validation.php?username=" + username + "&pass=" + pass;
 		var url = "info_validation.php?username=" + uservalue;
 		xmlHttp = GetXmlHttpObject();
 		if (xmlHttp === null) {
@@ -38,7 +36,7 @@ function checkUsername() {
 	var usernameRegex = new RegExp("^[A-Za-z0-9]+$");
 	var username = document.getElementById("username");
 	if (username.value.length < 8) {
-		document.getElementById("user_error").innerHTML = "Username length min 8 letter";
+		document.getElementById("user_error").innerHTML = "UserName must be at least 8 characters";
 		return false;
 	}
 	if (usernameRegex.test(username.value)) {
@@ -60,7 +58,7 @@ function checkPass() {
 		document.getElementById("pass_error").innerHTML = "";
 		return true;
 	}
-	document.getElementById("pass_error").innerHTML = "Password length min 8 letter";
+	document.getElementById("pass_error").innerHTML = "Password must be at least 8 characters";
 	return false;
 }
 

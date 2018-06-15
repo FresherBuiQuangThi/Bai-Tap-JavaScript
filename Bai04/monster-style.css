@@ -1,0 +1,10 @@
+*{}
+
+#menuCanvas{
+	border:1px solid black;
+	}
+	
+#containCanvas{
+	border:1px solid black;
+	cursor: pointer;
+	}
